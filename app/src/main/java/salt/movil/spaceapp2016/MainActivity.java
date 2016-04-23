@@ -1,5 +1,6 @@
 package salt.movil.spaceapp2016;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -15,6 +16,7 @@ import android.view.View;
 import salt.movil.spaceapp2016.fragments.AfeccionesComplejasFragment;
 import salt.movil.spaceapp2016.fragments.MiEstadoFragment;
 import salt.movil.spaceapp2016.fragments.MisTrofeosFragment;
+import salt.movil.spaceapp2016.fragments.PerfilFragment;
 import salt.movil.spaceapp2016.fragments.RutaFragment;
 
 public class MainActivity extends AppCompatActivity implements DrawerLayout.DrawerListener, NavigationView.OnNavigationItemSelectedListener {
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements DrawerLayout.Draw
     MiEstadoFragment miEstadoFragment;
     MisTrofeosFragment misTrofeosFragment;
     RutaFragment rutaFragment;
+    PerfilFragment perfilFragment;
 
 
 
@@ -58,6 +61,7 @@ public class MainActivity extends AppCompatActivity implements DrawerLayout.Draw
         miEstadoFragment = new MiEstadoFragment();
         misTrofeosFragment = new MisTrofeosFragment();
         rutaFragment = new RutaFragment();
+        perfilFragment = new PerfilFragment();
         replaceFragment(miEstadoFragment);
     }
 
@@ -77,8 +81,11 @@ public class MainActivity extends AppCompatActivity implements DrawerLayout.Draw
                 replaceFragment(afeccionesComplejasFragment);
                 break;
             case R.id.opcion_perfil:
+                replaceFragment(perfilFragment);
                 break;
             case R.id.opcion_salir:
+                Intent intent = new Intent(this,LoginActivity.class);
+                startActivity(intent);
                 break;
         }
         drawerLayout.closeDrawers();

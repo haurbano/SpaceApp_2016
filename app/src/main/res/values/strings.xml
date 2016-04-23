@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SpaceApp2016</string>
+    <string name="app_name">CityMe</string>
     <string name="title_activity_login">Sign in</string>
 
     <!-- Strings related to login -->
