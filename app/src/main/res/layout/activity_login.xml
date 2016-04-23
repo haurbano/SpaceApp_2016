@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="salt.movil.spaceapp2016.LoginActivity">
+
+    <ImageView
+        android:src="@drawable/ciudad"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <Button
+        android:id="@+id/btn_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Inicia con Google+"
+        android:drawableLeft="@drawable/google_plus"
+        android:paddingLeft="20dp"
+        android:background="#DC4E41"
+        android:textColor="#ffffff"
+        />
+
+    <Button
+        android:id="@+id/btn_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_google"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Inicia con Facebook"
+        android:drawableLeft="@drawable/facebook"
+        android:paddingLeft="20dp"
+        android:background="#4267B2"
+        android:textColor="#ffffff"
+        />
+
+</RelativeLayout>
