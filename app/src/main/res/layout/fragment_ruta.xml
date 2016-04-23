@@ -2,12 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.MiEstadoFragment">
+    tools:context="salt.movil.spaceapp2016.fragments.RutaFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="mi estado" />
+        android:text="ruta" />
 
 </FrameLayout>

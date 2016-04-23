@@ -2,6 +2,39 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:title="opcion1"/>
+        android:title="Opciones">
+        <menu>
+            <item
+                android:id="@+id/opcion_mi_estado"
+                android:title="Mi Estado"
+                android:icon="@drawable/ic_estado_black_24dp"
+                />
+            <item
+                android:id="@+id/option_ruta"
+                android:title="Mi Ruta"
+                android:icon="@drawable/ic_person_run_24dp"/>
+            <item
+                android:id="@+id/opcion_trofeos"
+                android:title="Mis Trofeos"
+                android:icon="@drawable/ic_podium"/>
+            <item
+                android:id="@+id/opcion_afecciones"
+                android:title="Afecciones"
+                android:icon="@drawable/ic_sentiment_very_dissatisfied_black_24px"/>
+        </menu>
+    </item>
+    <item
+        android:title="Perfil">
+        <menu>
+            <item
+                android:id="@+id/opcion_perfil"
+                android:title="Ver perfil"
+                android:icon="@drawable/ic_person_black_24dp"/>
+            <item
+                android:id="@+id/opcion_salir"
+                android:title="Salir"
+                android:icon="@drawable/ic_exit_24dp"/>
+        </menu>
 
+    </item>
 </menu>

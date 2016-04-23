@@ -36,14 +36,14 @@
                 android:layout_height="70dp"
                 android:scaleType="centerCrop"
                 android:layout_margin="5dp"
-                android:src="#ff1123"/>
+                android:src="@drawable/img_profile"/>
 
             <ImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:scaleType="centerCrop"
                 android:layout_margin="5dp"
-                android:src="#ff1123"/>
+                android:src="@drawable/logo_cuadrado"/>
 
         </LinearLayout>
 
@@ -80,6 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <Button
+                android:id="@+id/btn_cancel_facebook"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -88,6 +89,7 @@
                 android:layout_marginRight="5dp"/>
 
             <Button
+                android:id="@+id/btn_ok_facebook"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
