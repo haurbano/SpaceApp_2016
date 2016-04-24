@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity implements DrawerLayout.Draw
     }
 
     //region metodo para cambiar fragment principal
-    private void replaceFragment(Fragment fragment){
+    public void replaceFragment(Fragment fragment){
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.continer_drawer,fragment);
         fragmentTransaction.commit();
