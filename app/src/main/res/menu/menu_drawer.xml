@@ -17,6 +17,10 @@
                 android:id="@+id/opcion_trofeos"
                 android:title="Mis Trofeos"
                 android:icon="@drawable/ic_podium"/>
+            <item
+                android:icon="@drawable/ic_psi"
+                android:id="@+id/opcion_polucion"
+                android:title="Calculal indice de polucion"/>
             </menu>
     </item>
     <item

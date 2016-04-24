@@ -16,6 +16,7 @@ import android.view.View;
 import salt.movil.spaceapp2016.fragments.AfeccionesComplejasFragment;
 import salt.movil.spaceapp2016.fragments.MiEstadoFragment;
 import salt.movil.spaceapp2016.fragments.MisTrofeosFragment;
+import salt.movil.spaceapp2016.fragments.PSIFragment;
 import salt.movil.spaceapp2016.fragments.PerfilFragment;
 import salt.movil.spaceapp2016.fragments.RutaFragment;
 
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements DrawerLayout.Draw
     MisTrofeosFragment misTrofeosFragment;
     RutaFragment rutaFragment;
     PerfilFragment perfilFragment;
+    PSIFragment psiFragment;
 
 
 
@@ -62,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements DrawerLayout.Draw
         misTrofeosFragment = new MisTrofeosFragment();
         rutaFragment = new RutaFragment();
         perfilFragment = new PerfilFragment();
+        psiFragment = new PSIFragment();
         replaceFragment(miEstadoFragment);
     }
 
@@ -83,6 +86,9 @@ public class MainActivity extends AppCompatActivity implements DrawerLayout.Draw
             case R.id.opcion_salir:
                 Intent intent = new Intent(this,LoginActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.opcion_polucion:
+                replaceFragment(psiFragment);
                 break;
         }
         drawerLayout.closeDrawers();
