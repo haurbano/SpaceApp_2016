@@ -77,9 +77,6 @@ public class MainActivity extends AppCompatActivity implements DrawerLayout.Draw
             case R.id.opcion_trofeos:
                 replaceFragment(misTrofeosFragment);
                 break;
-            case R.id.opcion_afecciones:
-                replaceFragment(afeccionesComplejasFragment);
-                break;
             case R.id.opcion_perfil:
                 replaceFragment(perfilFragment);
                 break;

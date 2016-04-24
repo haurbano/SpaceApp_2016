@@ -17,11 +17,7 @@
                 android:id="@+id/opcion_trofeos"
                 android:title="Mis Trofeos"
                 android:icon="@drawable/ic_podium"/>
-            <item
-                android:id="@+id/opcion_afecciones"
-                android:title="Afecciones"
-                android:icon="@drawable/ic_sentiment_very_dissatisfied_black_24px"/>
-        </menu>
+            </menu>
     </item>
     <item
         android:title="Perfil">

@@ -19,9 +19,6 @@ import com.google.android.gms.maps.MapView;
 
 import salt.movil.spaceapp2016.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class RutaFragment extends Fragment {
 
     GoogleMap googleMap;
@@ -53,7 +50,6 @@ public class RutaFragment extends Fragment {
             return null;
         }
         googleMap.setMyLocationEnabled(true);
-
         return v;
     }
 
