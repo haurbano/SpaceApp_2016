@@ -32,10 +32,13 @@ public class MainActivity extends AppCompatActivity implements DrawerLayout.Draw
     RutaFragment rutaFragment;
     PerfilFragment perfilFragment;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         FindElement();
         loadFragments();
 
